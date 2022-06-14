@@ -1,0 +1,10 @@
+body{
+    background-color: green;
+}
+
+.parallelogram {
+    width: 1500px;
+    height: 50%;
+    transform: skew(20deg);
+    background: transparent;
+  }
