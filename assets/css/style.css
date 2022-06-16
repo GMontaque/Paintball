@@ -14,6 +14,11 @@ Html {
     
 }
 
+body{
+  background-color: green;
+  
+}
+
 .container-fluid{
   width: auto;
 }
@@ -38,6 +43,8 @@ Html {
     height: 200px;
 }
 
+/* video */
+
 .headerVideo{
     clip-path: polygon(0% 12%,100% 24%,100% 100%,0% 82%);
     width: 100%;
@@ -45,11 +52,6 @@ Html {
 }
 
 /* Main */
-
-body{
-    background-color: green;
-    
-}
 
 main{
     background-color: blue;
@@ -63,9 +65,21 @@ main{
 
 .card{
 display: inline-block;
-width: 18rem;
+width: 30em;
+border: 20px solid black;
+border-radius: 2rem;
+height: 50rem;
+margin: 0rem 3rem;
+background-image: url("../img/logo.jpg");
+background-size: 100% 100%;
+position: relative;
 }
 
+.card-body{
+  position: absolute;
+  bottom: 0; 
+  background-color: red; 
+}
 
 
 /* calender */
@@ -152,5 +166,6 @@ a {
 
   .mailInput{
     width: 90%;
-    height: 1.5rem;
+    height: 2rem !important;
+    padding: 0;
   }
