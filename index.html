@@ -61,16 +61,13 @@
 			<!-- top trump cards -->
 			<div class="row">
 				<div class="col-md">
-					<div
-						id="carouselExampleIndicators"
-						class="carousel slide"
-						data-bs-ride="carousel"
-					>
-						<div class="carousel-inner" style="margin: 0 12rem">
+					<div id="carouselExampleIndicators" class="carousel slide">
+						<!-- data-bs-ride="carousel" -->
+						<div class="carousel-inner">
 							<!-- carousel slide 1 -->
 							<div class="carousel-item active">
 								<!-- Player card 1 -->
-								<div class="card" style="width: 18rem">
+								<div class="card">
 									<img src="..." class="card-img-top" alt="..." />
 									<div class="card-body">
 										<h5 class="card-title">Card title 1</h5>
@@ -82,7 +79,7 @@
 									</div>
 								</div>
 								<!-- Player card 2 -->
-								<div class="card" style="width: 18rem">
+								<div class="card">
 									<img src="..." class="card-img-top" alt="..." />
 									<div class="card-body">
 										<h5 class="card-title">Card title 2</h5>
@@ -94,7 +91,7 @@
 									</div>
 								</div>
 								<!-- Player card 3 -->
-								<div class="card" style="width: 18rem">
+								<div class="card">
 									<img src="..." class="card-img-top" alt="..." />
 									<div class="card-body">
 										<h5 class="card-title">Card title 3</h5>
@@ -107,7 +104,7 @@
 								</div>
 							</div>
 							<div class="carousel-item">
-								<div class="card" style="width: 18rem">
+								<div class="card">
 									<img src="..." class="card-img-top" alt="..." />
 									<div class="card-body">
 										<h5 class="card-title">Card title 4</h5>
@@ -118,7 +115,7 @@
 										<a href="#" class="btn btn-primary">Go somewhere</a>
 									</div>
 								</div>
-								<div class="card" style="width: 18rem">
+								<div class="card">
 									<img src="..." class="card-img-top" alt="..." />
 									<div class="card-body">
 										<h5 class="card-title">Card title 5</h5>
@@ -129,7 +126,7 @@
 										<a href="#" class="btn btn-primary">Go somewhere</a>
 									</div>
 								</div>
-								<div class="card" style="width: 18rem">
+								<div class="card">
 									<img src="..." class="card-img-top" alt="..." />
 									<div class="card-body">
 										<h5 class="card-title">Card title 6</h5>
@@ -142,7 +139,7 @@
 								</div>
 							</div>
 							<div class="carousel-item">
-								<div class="card" style="width: 18rem">
+								<div class="card">
 									<img src="..." class="card-img-top" alt="..." />
 									<div class="card-body">
 										<h5 class="card-title">Card title 7</h5>
@@ -153,7 +150,7 @@
 										<a href="#" class="btn btn-primary">Go somewhere</a>
 									</div>
 								</div>
-								<div class="card" style="width: 18rem">
+								<div class="card">
 									<img src="..." class="card-img-top" alt="..." />
 									<div class="card-body">
 										<h5 class="card-title">Card title 8</h5>
@@ -164,7 +161,7 @@
 										<a href="#" class="btn btn-primary">Go somewhere</a>
 									</div>
 								</div>
-								<div class="card" style="width: 18rem">
+								<div class="card">
 									<img src="..." class="card-img-top" alt="..." />
 									<div class="card-body">
 										<h5 class="card-title">Card title 9</h5>
@@ -316,28 +313,30 @@
 		</main>
 
 		<!-- footer -->
-		<footer class="row">
-			<div class="col-md">
-				<h2>Conflict Rogues</h2>
-				<i class="fa-brands fa-facebook-square"></i>
-				<i class="fab fa-instagram"></i>
-				<i class="fab fa-twitter-square"></i>
-			</div>
-			<div class="col-md">
-				<h3>Join the Mailing List</h3>
-				<form>
-					<div class="form-floating mb-3">
-						<input
-							type="email"
-							class="form-control"
-							id="floatingInput"
-							placeholder="name@example.com"
-						/>
-						<label for="floatingInput">Email address</label>
-					</div>
+		<footer class="container-fluid">
+			<div class="row">
+				<div class="col-md">
+					<h2>Conflict Rogues</h2>
+					<i class="fa-brands fa-facebook-square"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-twitter-square"></i>
+				</div>
+				<div class="col-md">
+					<h3>Join the Mailing List</h3>
+					<form>
+						<div class="form-floating mb-3">
+							<input
+								type="email"
+								class="form-control mailInput"
+								id="floatingInput"
+								placeholder="name@example.com"
+							/>
+							<label for="floatingInput">Email address</label>
+						</div>
 
-					<button type="submit" class="btn btn-primary">Submit</button>
-				</form>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
 			</div>
 		</footer>
 		<!-- Bootstrap JavaScript Libraries -->
