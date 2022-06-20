@@ -24,6 +24,11 @@
 			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
 			crossorigin="anonymous"
 		/>
+		<!-- font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/f62ecf7247.js"
+			crossorigin="anonymous"
+		></script>
 
 		<!-- style css -->
 		<link rel="stylesheet" href="assets/css/style.css" />
@@ -32,7 +37,7 @@
 		<main class="container-fluid">
 			<!-- logo/header -->
 			<div class="row">
-				<div class="col-md header">
+				<div class="col-md headerTop">
 					<h1 class="title">Conflict Rogues</h1>
 					<img
 						src="assets/img/logo.jpg"
@@ -43,7 +48,7 @@
 				</div>
 			</div>
 			<!-- video  -->
-			<div class="row">
+			<div class="row" style="margin-top: -17rem">
 				<div class="col-md">
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
@@ -57,6 +62,10 @@
 						class="headerVideo"
 					></video>
 				</div>
+			</div>
+			<!-- spacer row -->
+			<div class="row">
+				<div class="spacerBox"></div>
 			</div>
 			<!-- top trump cards -->
 			<div class="row">
@@ -702,12 +711,17 @@
 					</div>
 				</div>
 			</div>
-
+			<!-- spacer row -->
+			<div class="row">
+				<div class="spacerBox"></div>
+			</div>
 			<!-- events -->
 			<div class="row">
 				<div class="col-md">
 					<!-- events calender -->
-					<div class="container">
+					<div id="calendar"></div>
+					<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+					<!-- <div class="container">
 						<div class="calendar">
 							<div class="front">
 								<div class="current-date">
@@ -780,7 +794,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 				<div class="col-md">
 					<div class="accordion" id="accordionExample">
@@ -931,6 +945,10 @@
 					 -->
 				</div>
 			</div>
+			<!-- spacer row -->
+			<div class="row">
+				<div class="spacerBox"></div>
+			</div>
 		</main>
 
 		<!-- footer -->
@@ -938,9 +956,9 @@
 			<div class="row">
 				<div class="col-md">
 					<h2>Conflict Rogues</h2>
-					<i class="fa-brands fa-facebook-square"></i>
-					<i class="fab fa-instagram"></i>
-					<i class="fab fa-twitter-square"></i>
+					<i class="fab fa-facebook-square fa-4x"></i>
+					<i class="fab fa-instagram fa-4x"></i>
+					<i class="fab fa-twitter-square fa-4x"></i>
 				</div>
 				<div class="col-md">
 					<h3>Join the Mailing List</h3>
@@ -972,12 +990,8 @@
 			integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
 			crossorigin="anonymous"
 		></script>
+
 		<!-- javascript file -->
 		<script src="assets/js/app.js"></script>
-		<!-- font Awesome -->
-		<script
-			src="https://kit.fontawesome.com/f62ecf7247.js"
-			crossorigin="anonymous"
-		></script>
 	</body>
 </html>
