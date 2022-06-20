@@ -16,57 +16,83 @@
 			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
 			crossorigin="anonymous"
 		/>
+		<!-- font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/f62ecf7247.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- style css -->
+		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body>
 		<main class="container-fluid">
-			<div class="images"></div>
+			<div class="row">
+				<div class="column">
+					<img src="/assets/img/paintball1.jpg" style="width: 100%" />
+					<img src="/assets/img/paintball1.jpg" style="width: 100%" />
+					<img src="/assets/img/paintball1.jpg" style="width: 100%" />
+				</div>
+				<div class="column">
+					<img src="/assets/img/paintball2.jpg" style="width: 100%" />
+					<img src="/assets/img/paintball2.jpg" style="width: 100%" />
+					<img src="/assets/img/paintball2.jpg" style="width: 100%" />
+				</div>
+				<div class="column">
+					<img src="/assets/img/paintball3.jpg" style="width: 100%" />
+					<img src="/assets/img/paintball3.jpg" style="width: 100%" />
+					<img src="/assets/img/paintball3.jpg" style="width: 100%" />
+				</div>
+				<div class="column">
+					<img src="/assets/img/paintball4.jpg" style="width: 100%" />
+					<img src="/assets/img/paintball4.jpg" style="width: 100%" />
+					<img src="/assets/img/paintball4.jpg" style="width: 100%" />
+				</div>
+			</div>
+
 			<!-- sign up request form -->
-			<div class="signUpRequest">
+			<form action="" class="signUpRequest">
 				<!-- person name -->
 				<div class="mb-3" class="name">
-					<label for="" class="form-label"></label>
+					<label for="" class="form-label">Name</label>
 					<input
 						type="text"
 						class="form-control"
 						name=""
 						id=""
 						aria-describedby="helpId"
-						placeholder=""
+						placeholder="John Smith"
+						required
 					/>
-					<small id="helpId" class="form-text text-muted">Help text</small>
 				</div>
 				<!-- person nickname -->
 				<div class="mb-3" class="nickName">
-					<label for="" class="form-label"></label>
+					<label for="" class="form-label">Nickname</label>
 					<input
 						type="text"
 						class="form-control"
 						name=""
 						id=""
 						aria-describedby="helpId"
-						placeholder=""
+						placeholder="Smithy"
+						required
 					/>
-					<small id="helpId" class="form-text text-muted">Help text</small>
 				</div>
 				<!-- player position prefered -->
 				<div class="mb-3" class="position">
-					<label for="" class="form-label"></label>
+					<label for="" class="form-label">Prefered Position</label>
 					<input
 						type="text"
 						class="form-control"
 						name=""
 						id=""
 						aria-describedby="helpId"
-						placeholder=""
+						placeholder="Snake Forward"
+						required
 					/>
-					<small id="helpId" class="form-text text-muted">Help text</small>
 				</div>
 
 				<!-- prefernce on where to play -->
-				<div class="form-check" class="preference">
-					<input class="form-check-input" type="checkbox" value="" id="" />
-					<label class="form-check-label" for=""> Default checkbox </label>
-				</div>
 				<div class="form-check">
 					<input
 						class="form-check-input"
@@ -75,21 +101,51 @@
 						id=""
 						checked
 					/>
-					<label class="form-check-label" for=""> Checked checkbox </label>
+					<label class="form-check-label" for=""> Anywhere </label>
 				</div>
+				<div class="form-check" class="preference">
+					<input class="form-check-input" type="checkbox" value="" id="" />
+					<label class="form-check-label" for=""> D side </label>
+				</div>
+				<div class="form-check" class="preference">
+					<input class="form-check-input" type="checkbox" value="" id="" />
+					<label class="form-check-label" for=""> D Support </label>
+				</div>
+				<div class="form-check" class="preference">
+					<input class="form-check-input" type="checkbox" value="" id="" />
+					<label class="form-check-label" for=""> Snake Side </label>
+				</div>
+				<div class="form-check" class="preference">
+					<input class="form-check-input" type="checkbox" value="" id="" />
+					<label class="form-check-label" for=""> Snake Support </label>
+				</div>
+				<div class="form-check" class="preference">
+					<input class="form-check-input" type="checkbox" value="" id="" />
+					<label class="form-check-label" for=""> middle </label>
+				</div>
+				<div class="form-check" class="preference">
+					<input class="form-check-input" type="checkbox" value="" id="" />
+					<label class="form-check-label" for=""> Runner </label>
+				</div>
+
 				<!-- ability to do training -->
 				<div class="mb-3" class="participateTraining">
-					<label for="" class="form-label">City</label>
-					<select class="form-select" name="" id="">
-						<option selected>Select one</option>
-						<option value="">Yes</option>
-						<option value="">No</option>
-						<option value="">occationally</option>
+					<label for="" class="form-label"
+						>ability to come to training sessions</label
+					>
+					<select class="form-select" name="" id="" required>
+						<option value="">See Below</option>
+						<option value="none">None</option>
+						<option value="Yes">Yes</option>
+						<option value="No">No</option>
+						<option value="occationally">occationally</option>
 					</select>
 				</div>
 				<!-- any other informaiton -->
+				<label for="">Comments...</label>
 				<textarea name="" id="otherInformation" cols="30" rows="10"></textarea>
-			</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
 			<div class="contactUS"></div>
 		</main>
 		<!-- Bootstrap JavaScript Libraries -->
