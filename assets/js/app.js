@@ -1,4 +1,4 @@
-// alert("hello");
+// calander display code
 !(function () {
 	var today = moment();
 
@@ -38,6 +38,7 @@
 			var right = createElement("div", "right");
 			right.addEventListener("click", function () {
 				self.nextMonth();
+				accordionUpdate();
 			});
 
 			var left = createElement("div", "left");
@@ -376,3 +377,14 @@
 
 	var calendar = new Calendar("#calendar", data);
 })();
+
+// update accordion information
+
+function accordionUpdate() {
+	let element;
+	for (let index = 0; index < 10; index++) {
+		element = index;
+	}
+
+	document.getElementById("updateText").innerHTML = "New text!" + element;
+}

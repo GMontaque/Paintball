@@ -39,6 +39,7 @@
 			<div class="row">
 				<div class="col-md headerTop">
 					<h1 class="title">Conflict Rogues</h1>
+
 					<img
 						src="assets/img/logo.jpg"
 						alt="logo - Conflict Rogues"
@@ -50,10 +51,7 @@
 			<!-- video  -->
 			<div class="row" style="margin-top: -17rem">
 				<div class="col-md">
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-						magnam.
-					</p>
+					<a href="second.html">link back to main page</a>
 					<video
 						autoplay
 						muted
@@ -827,6 +825,7 @@
 									worth noting that just about any HTML can go within the
 									<code>.accordion-body</code>, though the transition does limit
 									overflow.
+									<p id="updateText">empty</p>
 								</div>
 							</div>
 						</div>
@@ -962,18 +961,27 @@
 				</div>
 				<div class="col-md">
 					<h3>Join the Mailing List</h3>
-					<form>
+					<form id="emailForm" class="needs-validation" novalidate>
 						<div class="form-floating mb-3">
 							<input
-								type="email"
+								type="text"
 								class="form-control mailInput"
-								id="floatingInput"
+								id="floatingInputMail"
 								placeholder="name@example.com"
+								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"
+								required
 							/>
-							<label for="floatingInput">Email address</label>
+							<!-- title="Email address should be entered in the following format: email@tester.com" -->
+							<label for="floatingInputMail">Email address</label>
+							<div class="invalid-feedback">
+								ERROR! Please write your email in the correct format
+								email@tester.com
+							</div>
 						</div>
 
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<button type="submit" class="btn btn-primary" id="submit">
+							Submit
+						</button>
 					</form>
 				</div>
 			</div>
@@ -993,5 +1001,7 @@
 
 		<!-- javascript file -->
 		<script src="assets/js/app.js"></script>
+		<!-- javascript form validation -->
+		<script src="/assets/js/formValidation.js"></script>
 	</body>
 </html>
