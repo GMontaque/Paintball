@@ -34,7 +34,6 @@
 		form.addEventListener(
 			"submit",
 			function (event) {
-				let form = document.getElementById("emailForm");
 				if (!form.checkValidity()) {
 					event.preventDefault();
 					event.stopPropagation();
@@ -64,14 +63,13 @@
 		form.addEventListener(
 			"submit",
 			function (event) {
-				let form = document.getElementById("emailForms");
 				if (!form.checkValidity()) {
 					event.preventDefault();
 					event.stopPropagation();
 					form.classList.add("was-validated");
 				} else {
 					event.preventDefault();
-					checker();
+					joinerFormSubmitDetails();
 					form.reset();
 					form.classList.remove("was-validated");
 				}
@@ -81,11 +79,36 @@
 	});
 })();
 
+// print joiner form details
+
+function joinerFormSubmitDetails() {
+	let joinerName = document.getElementById("joinerName").value;
+	let joinerNickname = document.getElementById("joinerNickname").value;
+	let joinerPosition = document.getElementById("joinerPosition").value;
+	let joinerPrefernce = document.querySelectorAll(
+		'input[type="checkbox"]:checked'
+	);
+	let joinerPrefernceList = [...joinerPrefernce].map((c) => c.value);
+	let joinerTraining = document.getElementById("joinerTraining").value;
+
+	console.log(
+		joinerName,
+		joinerNickname,
+		joinerPosition,
+		joinerPrefernceList,
+		joinerTraining
+	);
+}
+
 // prints form value
 
 function checker() {
 	alert("ewere");
-	let nameInput = document.getElementById("floatingInputMail");
+	let nameInput = document.getElementById("floatingInputName");
+	let emailInput = document.getElementById("floatingInputEmail").value;
+	if (nameInput != null) {
+		console.log(nameInput.value);
+	}
 
-	console.log(nameInput.value);
+	console.log("your name is " + emailInput);
 }

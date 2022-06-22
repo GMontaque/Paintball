@@ -100,7 +100,7 @@
 							type="text"
 							class="form-control"
 							name=""
-							id=""
+							id="joinerNickname"
 							aria-describedby="helpId"
 							placeholder="Smithy"
 							required
@@ -115,7 +115,7 @@
 							type="text"
 							class="form-control"
 							name=""
-							id=""
+							id="joinerPosition"
 							aria-describedby="helpId"
 							placeholder="Snake Forward"
 							required
@@ -125,38 +125,69 @@
 					</div>
 
 					<!-- prefernce on where to play -->
+					<label for="" class="form-label">Secondary Choose Position</label>
 					<div class="form-check">
 						<input
 							class="form-check-input"
 							type="checkbox"
-							value=""
+							value="Anywhere"
 							id=""
 							checked
 						/>
 						<label class="form-check-label" for=""> Anywhere </label>
 					</div>
 					<div class="form-check" class="preference">
-						<input class="form-check-input" type="checkbox" value="" id="" />
+						<input
+							class="form-check-input"
+							type="checkbox"
+							value="D side"
+							id=""
+						/>
 						<label class="form-check-label" for=""> D side </label>
 					</div>
 					<div class="form-check" class="preference">
-						<input class="form-check-input" type="checkbox" value="" id="" />
+						<input
+							class="form-check-input"
+							type="checkbox"
+							value="D Support"
+							id=""
+						/>
 						<label class="form-check-label" for=""> D Support </label>
 					</div>
 					<div class="form-check" class="preference">
-						<input class="form-check-input" type="checkbox" value="" id="" />
+						<input
+							class="form-check-input"
+							type="checkbox"
+							value="Snake Side"
+							id=""
+						/>
 						<label class="form-check-label" for=""> Snake Side </label>
 					</div>
 					<div class="form-check" class="preference">
-						<input class="form-check-input" type="checkbox" value="" id="" />
+						<input
+							class="form-check-input"
+							type="checkbox"
+							value="Snake Support"
+							id=""
+						/>
 						<label class="form-check-label" for=""> Snake Support </label>
 					</div>
 					<div class="form-check" class="preference">
-						<input class="form-check-input" type="checkbox" value="" id="" />
+						<input
+							class="form-check-input"
+							type="checkbox"
+							value="middle"
+							id=""
+						/>
 						<label class="form-check-label" for=""> middle </label>
 					</div>
 					<div class="form-check" class="preference">
-						<input class="form-check-input" type="checkbox" value="" id="" />
+						<input
+							class="form-check-input"
+							type="checkbox"
+							value="Runner"
+							id=""
+						/>
 						<label class="form-check-label" for=""> Runner </label>
 					</div>
 
@@ -165,7 +196,7 @@
 						<label for="" class="form-label"
 							>ability to come to training sessions</label
 						>
-						<select class="form-select" name="" id="" required>
+						<select class="form-select" name="" id="joinerTraining" required>
 							<option value="">See Below</option>
 							<option value="none">None</option>
 							<option value="Yes">Yes</option>
@@ -193,7 +224,7 @@
 						<input
 							type="text"
 							class="form-control mailInput"
-							id="floatingInput"
+							id="floatingInputName"
 							placeholder="John Smith"
 							onkeydown="return /[a-z]/i.test(event.key)"
 							required
@@ -205,7 +236,7 @@
 						<input
 							type="email"
 							class="form-control mailInput"
-							id="floatingInputMail"
+							id="floatingInputEmail"
 							placeholder="name@example.com"
 							pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"
 							required
