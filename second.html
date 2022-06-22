@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Title</title>
+		<!-- webpage tab name -->
+		<title>Conflict Rogues - Information</title>
+		<!-- favicon tab image -->
+		<link rel="icon" type="image/x-icon" href="/assets/img/logo.jpg" />
 		<!-- Required meta tags -->
 		<meta charset="utf-8" />
 		<meta
@@ -27,17 +30,22 @@
 	</head>
 	<body>
 		<!-- logo/header -->
+		<header class="container-fluid">
+			<div class="row">
+				<div class="headerTop">
+					<h1 class="title">Conflict Rogues</h1>
 
-		<div class="headerTop">
-			<h1 class="title">Conflict Rogues</h1>
-			<a href="index.html">link back to main page</a>
-			<img
-				src="/assets/img/logo.jpg"
-				alt="logo - Conflict Rogues"
-				srcset=""
-				class="img-fluid rounded logoImg"
-			/>
-		</div>
+					<a href="index.html" class="secondPage">Home Page</a>
+
+					<img
+						src="/assets/img/logo.jpg"
+						alt="logo - Conflict Rogues"
+						srcset=""
+						class="img-fluid rounded logoImg"
+					/>
+				</div>
+			</div>
+		</header>
 
 		<main class="container-fluid">
 			<div class="row">
@@ -222,6 +230,43 @@
 				</form>
 			</div>
 		</main>
+
+		<!-- footer -->
+		<footer class="container-fluid">
+			<div class="row">
+				<div class="col-md">
+					<h2>Conflict Rogues</h2>
+					<i class="fab fa-facebook-square fa-4x"></i>
+					<i class="fab fa-instagram fa-4x"></i>
+					<i class="fab fa-twitter-square fa-4x"></i>
+				</div>
+				<div class="col-md">
+					<h3>Join the Mailing List</h3>
+					<form id="emailForm" class="needs-validation" novalidate>
+						<div class="form-floating mb-3">
+							<input
+								type="text"
+								class="form-control mailInput"
+								id="floatingInputMail"
+								placeholder="name@example.com"
+								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"
+								required
+							/>
+							<!-- title="Email address should be entered in the following format: email@tester.com" -->
+							<label for="floatingInputMail">Email address</label>
+							<div class="invalid-feedback">
+								ERROR! Please write your email in the correct format
+								email@tester.com
+							</div>
+						</div>
+
+						<button type="submit" class="btn btn-primary" id="submit">
+							Submit
+						</button>
+					</form>
+				</div>
+			</div>
+		</footer>
 		<!-- Bootstrap JavaScript Libraries -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"

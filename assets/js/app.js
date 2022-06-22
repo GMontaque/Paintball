@@ -38,7 +38,6 @@
 			var right = createElement("div", "right");
 			right.addEventListener("click", function () {
 				self.nextMonth();
-				accordionUpdate();
 			});
 
 			var left = createElement("div", "left");
@@ -54,6 +53,8 @@
 		}
 
 		this.title.innerHTML = this.current.format("MMMM YYYY");
+		let month = this.current.format("MMMM").toLowerCase();
+		accordionUpdate(month);
 	};
 
 	Calendar.prototype.drawMonth = function () {
@@ -380,11 +381,88 @@
 
 // update accordion information
 
-function accordionUpdate() {
-	let element;
-	for (let index = 0; index < 10; index++) {
-		element = index;
-	}
+function accordionUpdate(month) {
+	let months = [
+		"january",
+		"february",
+		"march",
+		"april",
+		"may",
+		"june",
+		"july",
+		"august",
+		"september",
+		"october",
+		"november",
+		"december",
+	];
 
-	document.getElementById("updateText").innerHTML = "New text!" + element;
+	let week1 = [
+		"This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.",
+		"appropriate classes that we use to style each element These classes control the overall appearance as well as the showing and hiding via CSS transitions You can modify any of this",
+		"masdarch",
+		"aprqweqewil",
+		"mttay",
+		"juetretne",
+		"juhkhjly",
+		"augvbvnrtyryust",
+		"seruryuptember",
+		"oct12314ober",
+		"novtryember",
+		"dece68575mber",
+	];
+	let week2 = [
+		"This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.",
+		"appropriate classes that we use to style each element These classes control the overall appearance as well as the showing and hiding via CSS transitions You can modify any of this",
+		"masdarch",
+		"aprqweqewil",
+		"mttay",
+		"juetretne",
+		"juhkhjly",
+		"augvbvnrtyryust",
+		"seruryuptember",
+		"oct12314ober",
+		"novtryember",
+		"dece68575mber",
+	];
+	let week3 = [
+		"This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.",
+		"appropriate classes that we use to style each element These classes control the overall appearance as well as the showing and hiding via CSS transitions You can modify any of this",
+		"masdarch",
+		"aprqweqewil",
+		"mttay",
+		"juetretne",
+		"juhkhjly",
+		"augvbvnrtyryust",
+		"seruryuptember",
+		"oct12314ober",
+		"novtryember",
+		"dece68575mber",
+	];
+	let week4 = [
+		"This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.",
+		"appropriate classes that we use to style each element These classes control the overall appearance as well as the showing and hiding via CSS transitions You can modify any of this",
+		"masdarch",
+		"aprqweqewil",
+		"mttay",
+		"juetretne",
+		"juhkhjly",
+		"augvbvnrtyryust",
+		"seruryuptember",
+		"oct12314ober",
+		"novtryember",
+		"dece68575mber",
+	];
+	let month1 = months.indexOf(month);
+	let week1Internal = week1[month1];
+	let week2Internal = week2[month1];
+	let week3Internal = week3[month1];
+	let week4Internal = week4[month1];
+	document.getElementById("updateText1").innerHTML = week1Internal;
+	document.getElementById("updateText2").innerHTML = week2Internal;
+	document.getElementById("updateText3").innerHTML = week3Internal;
+	document.getElementById("updateText4").innerHTML = week4Internal;
+	console.log(
+		month1 + " " + week1Internal + week2Internal + week3Internal + week4Internal
+	);
 }
