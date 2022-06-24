@@ -10,12 +10,12 @@
 Html {
 	/* ( this equals 10px (10/16=0.625 x 100 = 62.4%)); therefore 1rem = 10px */
 	font-size: 62.5%;
-	font-family: "Nova Square", cursive;
 }
 
 body {
 	background-color: green;
 	box-sizing: border-box;
+	font-family: "Nova Square", cursive;
 }
 
 .container-fluid {
@@ -815,7 +815,7 @@ footer .col-md:nth-child(odd) {
 
 /* width */
 ::-webkit-scrollbar {
-	width: 20px;
+	width: 15px;
 }
 
 /* Track */
@@ -828,7 +828,7 @@ footer .col-md:nth-child(odd) {
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	background: black;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 }
 
 /* Handle on hover */
@@ -838,14 +838,14 @@ footer .col-md:nth-child(odd) {
 
 /* joiner Form */
 
-.background-image {
+.backgroundImgForm {
 	background-image: url(/assets/img/joinImage.jpg);
 	height: 70rem;
 	width: 70vw;
 	background-size: cover;
 	background-position: center 0%;
 	position: relative;
-	margin: 0rem auto;
+	margin: 15rem auto 0rem auto;
 }
 
 #emailForms {
@@ -860,52 +860,71 @@ footer .col-md:nth-child(odd) {
 
 .joinerStyle {
 	color: black;
-	/* border: 1px solid black; */
 	text-shadow: 1px 1px 2px rgba(000, 000, 000, 0.7),
 		0px 1px 0px rgba(255, 255, 255, 0.4);
 	background: rgb(194, 219, 223);
-	/* border-radius: 5rem; */
 	padding: 0.5rem 0.5rem;
-	/* width: 10rem; */
 }
 
 /* contact form */
 .contactForm {
 	width: 60%;
 	height: 50vh;
-	margin: 3rem auto;
-	border: 2px solid #ccc;
+	margin: 10% auto 1% auto;
+	border: 20px solid lightslategrey;
 	box-shadow: 7px 7px 20px #555;
-	/* position: relative; */
-	margin-bottom: 30rem;
-	/* overflow: hidden; */
-}
-hr {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	border: 0;
-	border-top: 10px solid black;
-	transform: rotate(90deg);
+	display: grid;
+	grid-template-areas:
+		"contactTitle divider postImage"
+		"contactComments divider contactName"
+		"contactComments divider contactEmail"
+		". divider button";
 }
 
-/* .contactName,
-.contactEmail,
-.contactBtn {
-	position: absolute;
-	right: 0;
+.formTitle {
+	grid-area: contactTitle;
+	font-size: xx-large;
+	align-self: center;
+	margin: 0 3rem;
 }
+
+.postStamp {
+	grid-area: postImage;
+	margin-top: 2rem;
+	margin-bottom: -2rem;
+}
+
 .contactName {
-	top: 0;
-} */
-/* .contactEmail {
-	bottom: 20px;
+	grid-area: contactName;
+	margin-left: -3rem;
+}
+
+.contactEmail {
+	grid-area: contactEmail;
+	margin-left: -3rem;
+}
+
+.hr {
+	grid-area: divider;
+	height: 90%;
+	width: 0.5rem;
+	margin: auto;
+	background-color: black;
+	border: 2px solid black;
+}
+
+.contactComments {
+	width: 100%;
+	margin-left: 3rem;
+	grid-area: contactComments;
 }
 
 .contactBtn {
-	bottom: 0;
-} */
-.contactComments {
-	/* position: absolute;
-	left: 22px; */
-	width: 40%;
+	grid-area: button;
+	margin-left: -3rem;
+}
+
+.contactBtn button {
+	padding: 1rem;
+	width: 15rem;
 }
