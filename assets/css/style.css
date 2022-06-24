@@ -22,10 +22,10 @@ body {
 	width: auto;
 }
 
-.row,
+/* .row,
 .row > * {
 	padding: 0 !important;
-}
+} */
 
 /* nav/header */
 
@@ -101,6 +101,10 @@ main {
 	background-color: green;
 }
 
+.spacerBox3Back {
+	background-color: blue;
+}
+
 .carousel-inner {
 	width: auto;
 }
@@ -118,6 +122,7 @@ main {
 .space {
 	display: flex;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
 }
 
 .card {
@@ -260,6 +265,12 @@ a {
 }
 
 /* accordion */
+.accordion {
+	margin: 0rem auto;
+	width: 90%;
+	padding-right: 10rem;
+}
+
 .accordion-header {
 	display: flex;
 }
@@ -269,6 +280,28 @@ a {
 .mailInput {
 	width: 90%;
 	padding: 0;
+}
+
+footer .col-md {
+	z-index: 1;
+	margin-top: -5%;
+	height: 15rem;
+}
+
+footer .col-md:nth-child(odd) {
+	padding-left: 3rem !important;
+}
+
+.footerHeader {
+	padding-left: 4rem;
+	margin-bottom: 2rem;
+}
+
+.footerJoinHeader {
+	margin-bottom: 2rem;
+}
+.fab {
+	padding-left: 4rem;
 }
 
 /* new Calender */
@@ -801,4 +834,78 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: green;
+}
+
+/* joiner Form */
+
+.background-image {
+	background-image: url(/assets/img/joinImage.jpg);
+	height: 70rem;
+	width: 70vw;
+	background-size: cover;
+	background-position: center 0%;
+	position: relative;
+	margin: 0rem auto;
+}
+
+#emailForms {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	padding: 0.5rem;
+}
+
+.joinerStyle {
+	color: black;
+	/* border: 1px solid black; */
+	text-shadow: 1px 1px 2px rgba(000, 000, 000, 0.7),
+		0px 1px 0px rgba(255, 255, 255, 0.4);
+	background: rgb(194, 219, 223);
+	/* border-radius: 5rem; */
+	padding: 0.5rem 0.5rem;
+	/* width: 10rem; */
+}
+
+/* contact form */
+.contactForm {
+	width: 60%;
+	height: 50vh;
+	margin: 3rem auto;
+	border: 2px solid #ccc;
+	box-shadow: 7px 7px 20px #555;
+	/* position: relative; */
+	margin-bottom: 30rem;
+	/* overflow: hidden; */
+}
+hr {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border: 0;
+	border-top: 10px solid black;
+	transform: rotate(90deg);
+}
+
+/* .contactName,
+.contactEmail,
+.contactBtn {
+	position: absolute;
+	right: 0;
+}
+.contactName {
+	top: 0;
+} */
+/* .contactEmail {
+	bottom: 20px;
+}
+
+.contactBtn {
+	bottom: 0;
+} */
+.contactComments {
+	/* position: absolute;
+	left: 22px; */
+	width: 40%;
 }

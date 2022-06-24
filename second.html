@@ -48,7 +48,7 @@
 		</header>
 
 		<main class="container-fluid">
-			<div class="row">
+			<div class="row" style="margin: 0rem auto">
 				<div class="column">
 					<img src="/assets/img/paintball1.jpg" style="width: 100%" />
 					<img src="/assets/img/paintball1.jpg" style="width: 100%" />
@@ -71,156 +71,182 @@
 				</div>
 			</div>
 			<div class="row">
-				<!-- sign up request form -->
-				<form
-					id="emailForms"
-					action=""
-					class="signUpRequest needs-validation-join"
-					novalidate
-				>
-					<!-- person name -->
-					<div class="mb-3" class="name">
-						<label for="" class="form-label">Name</label>
-						<input
-							type="text"
-							class="form-control"
-							name=""
-							id="joinerName"
-							aria-describedby="helpId"
-							placeholder="John Smith"
-							required
-							onkeydown="return /[a-z]/i.test(event.key)"
-						/>
-						<div class="invalid-feedback">Please write your name</div>
-					</div>
-					<!-- person nickname -->
-					<div class="mb-3" class="nickName">
-						<label for="" class="form-label">Nickname</label>
-						<input
-							type="text"
-							class="form-control"
-							name=""
-							id="joinerNickname"
-							aria-describedby="helpId"
-							placeholder="Smithy"
-							required
-							onkeydown="return /[a-z]/i.test(event.key)"
-						/>
-						<div class="invalid-feedback">Please write your Nickname</div>
-					</div>
-					<!-- player position prefered -->
-					<div class="mb-3" class="position">
-						<label for="" class="form-label">Prefered Position</label>
-						<input
-							type="text"
-							class="form-control"
-							name=""
-							id="joinerPosition"
-							aria-describedby="helpId"
-							placeholder="Snake Forward"
-							required
-							onkeydown="return /[a-z]/i.test(event.key)"
-						/>
-						<div class="invalid-feedback">Please write your name</div>
-					</div>
+				<div class="background-image">
+					<!-- sign up request form -->
+					<form
+						id="emailForms"
+						action=""
+						class="signUpRequest needs-validation-join"
+						novalidate
+					>
+						<!-- person name -->
+						<div class="mb-3" class="name">
+							<label for="" class="form-label joinerStyle">Name</label>
+							<input
+								type="text"
+								class="form-control"
+								name=""
+								id="joinerName"
+								aria-describedby="helpId"
+								placeholder="John Smith"
+								required
+								onkeydown="return /[a-z]/i.test(event.key)"
+							/>
+							<div class="invalid-feedback">Please write your name</div>
+						</div>
+						<!-- person nickname -->
+						<div class="mb-3" class="nickName">
+							<label for="" class="form-label joinerStyle">Nickname</label>
+							<input
+								type="text"
+								class="form-control"
+								name=""
+								id="joinerNickname"
+								aria-describedby="helpId"
+								placeholder="Smithy"
+								required
+								onkeydown="return /[a-z]/i.test(event.key)"
+							/>
+							<div class="invalid-feedback">Please write your Nickname</div>
+						</div>
+						<!-- player position prefered -->
+						<div class="mb-3" class="position">
+							<label for="" class="form-label joinerStyle"
+								>Prefered Position</label
+							>
+							<input
+								type="text"
+								class="form-control"
+								name=""
+								id="joinerPosition"
+								aria-describedby="helpId"
+								placeholder="Snake Forward"
+								required
+								onkeydown="return /[a-z]/i.test(event.key)"
+							/>
+							<div class="invalid-feedback">Please write your name</div>
+						</div>
 
-					<!-- prefernce on where to play -->
-					<label for="" class="form-label">Secondary Choose Position</label>
-					<div class="form-check">
-						<input
-							class="form-check-input"
-							type="checkbox"
-							value="Anywhere"
-							id=""
-							checked
-						/>
-						<label class="form-check-label" for=""> Anywhere </label>
-					</div>
-					<div class="form-check" class="preference">
-						<input
-							class="form-check-input"
-							type="checkbox"
-							value="D side"
-							id=""
-						/>
-						<label class="form-check-label" for=""> D side </label>
-					</div>
-					<div class="form-check" class="preference">
-						<input
-							class="form-check-input"
-							type="checkbox"
-							value="D Support"
-							id=""
-						/>
-						<label class="form-check-label" for=""> D Support </label>
-					</div>
-					<div class="form-check" class="preference">
-						<input
-							class="form-check-input"
-							type="checkbox"
-							value="Snake Side"
-							id=""
-						/>
-						<label class="form-check-label" for=""> Snake Side </label>
-					</div>
-					<div class="form-check" class="preference">
-						<input
-							class="form-check-input"
-							type="checkbox"
-							value="Snake Support"
-							id=""
-						/>
-						<label class="form-check-label" for=""> Snake Support </label>
-					</div>
-					<div class="form-check" class="preference">
-						<input
-							class="form-check-input"
-							type="checkbox"
-							value="middle"
-							id=""
-						/>
-						<label class="form-check-label" for=""> middle </label>
-					</div>
-					<div class="form-check" class="preference">
-						<input
-							class="form-check-input"
-							type="checkbox"
-							value="Runner"
-							id=""
-						/>
-						<label class="form-check-label" for=""> Runner </label>
-					</div>
-
-					<!-- ability to do training -->
-					<div class="mb-3" class="participateTraining">
-						<label for="" class="form-label"
-							>ability to come to training sessions</label
+						<!-- prefernce on where to play -->
+						<label
+							for=""
+							class="form-label joinerStyle"
+							style="width: fit-content"
+							>Secondary Choose Position</label
 						>
-						<select class="form-select" name="" id="joinerTraining" required>
-							<option value="">See Below</option>
-							<option value="none">None</option>
-							<option value="Yes">Yes</option>
-							<option value="No">No</option>
-							<option value="occationally">occationally</option>
-						</select>
-						<div class="invalid-feedback">Please make a selection</div>
-					</div>
-					<!-- any other informaiton -->
-					<label for="">Comments...</label>
-					<textarea
-						name=""
-						id="otherInformation"
-						cols="30"
-						rows="10"
-					></textarea>
-					<button type="submit" class="btn btn-primary">Submit</button>
-				</form>
+						<div class="form-check">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								value="Anywhere"
+								id=""
+								checked
+							/>
+							<label class="form-check-label" for=""> Anywhere </label>
+						</div>
+						<div class="form-check" class="preference">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								value="D side"
+								id=""
+							/>
+							<label class="form-check-label" for=""> D side </label>
+						</div>
+						<div class="form-check" class="preference">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								value="D Support"
+								id=""
+							/>
+							<label class="form-check-label" for=""> D Support </label>
+						</div>
+						<div class="form-check" class="preference">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								value="Snake Side"
+								id=""
+							/>
+							<label class="form-check-label" for=""> Snake Side </label>
+						</div>
+						<div class="form-check" class="preference">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								value="Snake Support"
+								id=""
+							/>
+							<label class="form-check-label" for=""> Snake Support </label>
+						</div>
+						<div class="form-check" class="preference">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								value="middle"
+								id=""
+							/>
+							<label class="form-check-label" for=""> middle </label>
+						</div>
+						<div class="form-check" class="preference">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								value="Runner"
+								id=""
+							/>
+							<label class="form-check-label" for=""> Runner </label>
+						</div>
+
+						<!-- ability to do training -->
+						<div class="mb-3" class="participateTraining">
+							<label for="" class="form-label joinerStyle"
+								>ability to come to training sessions</label
+							>
+							<select class="form-select" name="" id="joinerTraining" required>
+								<option value="">See Below</option>
+								<option value="none">None</option>
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+								<option value="occationally">occationally</option>
+							</select>
+							<div class="invalid-feedback">Please make a selection</div>
+						</div>
+						<!-- any other informaiton -->
+						<div class="mb-3" class="comments">
+							<label for="" class="form-label joinerStyle">Comments...</label>
+							<textarea
+								class="form-label"
+								name=""
+								id="otherInformation"
+								cols="30"
+								rows="10"
+								style="width: 100%"
+							></textarea>
+						</div>
+						<div class="d-grid gap-2 col-6">
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</div>
+					</form>
+				</div>
 			</div>
 
 			<!-- contact form -->
 			<div class="row">
-				<form id="emailForm" class="needs-validation" novalidate>
-					<div class="form-floating mb-3">
+				<form id="emailForm" class="needs-validation contactForm" novalidate>
+					<h2 class="formTitle">Contact Form</h2>
+					<div class="postStamp">
+						Post card stamp image insert here
+						<img
+							src="/assets/img/postcardStamp.svg"
+							alt=""
+							srcset=""
+							width="20%"
+							height="20%"
+						/>
+					</div>
+					<div class="form-floating mb-3 contactName">
 						<input
 							type="text"
 							class="form-control mailInput"
@@ -232,7 +258,7 @@
 						<label for="floatingInput">Name</label>
 						<div class="invalid-feedback">Please write your name</div>
 					</div>
-					<div class="form-floating mb-3">
+					<div class="form-floating mb-3 contactEmail">
 						<input
 							type="email"
 							class="form-control mailInput"
@@ -247,17 +273,20 @@
 							email@tester.com
 						</div>
 					</div>
-					<div class="form-floating">
+					<hr />
+					<div class="form-floating contactComments">
 						<textarea
 							class="form-control"
 							placeholder="Leave a comment here"
 							id="floatingTextarea2"
-							style="height: 70px"
+							style="height: 180px"
 						></textarea>
 						<label for="floatingTextarea2">Comments</label>
 					</div>
 
-					<button type="submit" class="btn btn-primary">Submit</button>
+					<button type="submit" class="btn btn-primary contactBtn">
+						Submit
+					</button>
 				</form>
 			</div>
 		</main>
