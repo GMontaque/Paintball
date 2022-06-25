@@ -66,17 +66,13 @@
 				</div>
 			</div>
 			<!-- spacer row -->
-			<div class="row spacerBox1Back" style="padding: 0rem">
+			<div class="row spacerBox1Back">
 				<div class="spacerBox1"></div>
 			</div>
 			<!-- top trump cards -->
 			<div class="row" style="padding: 0rem">
 				<div class="col-md" style="padding: 0rem">
-					<div
-						id="carouselExampleIndicators"
-						class="carousel slide"
-						style="padding: 0rem"
-					>
+					<div id="cardCarousel" class="carousel slide" style="padding: 0rem">
 						<!--data-bs-ride="carousel" -->
 						<div class="carousel-inner">
 							<!-- carousel slide 1 -->
@@ -693,7 +689,7 @@
 						<button
 							class="carousel-control-prev"
 							type="button"
-							data-bs-target="#carouselExampleIndicators"
+							data-bs-target="#cardCarousel"
 							data-bs-slide="prev"
 						>
 							<span
@@ -705,7 +701,7 @@
 						<button
 							class="carousel-control-next"
 							type="button"
-							data-bs-target="#carouselExampleIndicators"
+							data-bs-target="#cardCarousel"
 							data-bs-slide="next"
 						>
 							<span
@@ -726,84 +722,9 @@
 				<div class="col-md">
 					<!-- events calender -->
 					<div id="calendar"></div>
-					<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
-					<!-- <div class="container">
-						<div class="calendar">
-							<div class="front">
-								<div class="current-date">
-									<h1>Friday 15th</h1>
-									<h1>January 2016</h1>
-								</div>
-
-								<div class="current-month">
-									<ul class="week-days">
-										<li>MON</li>
-										<li>TUE</li>
-										<li>WED</li>
-										<li>THU</li>
-										<li>FRI</li>
-										<li>SAT</li>
-										<li>SUN</li>
-									</ul>
-
-									<div class="weeks">
-										<div class="first">
-											<span class="last-month">28</span>
-											<span class="last-month">29</span>
-											<span class="last-month">30</span>
-											<span class="last-month">31</span>
-											<span>01</span>
-											<span>02</span>
-											<span>03</span>
-										</div>
-
-										<div class="second">
-											<span>04</span>
-											<span>05</span>
-											<span>06</span>
-											<span>07</span>
-											<span>08</span>
-											<span>09</span>
-											<span>10</span>
-										</div>
-
-										<div class="third">
-											<span>11</span>
-											<span>12</span>
-											<span>13</span>
-											<span>14</span>
-											<span class="active">15</span>
-											<span>16</span>
-											<span>17</span>
-										</div>
-
-										<div class="fourth">
-											<span>18</span>
-											<span>19</span>
-											<span>20</span>
-											<span>21</span>
-											<span>22</span>
-											<span>23</span>
-											<span>24</span>
-										</div>
-
-										<div class="fifth">
-											<span>25</span>
-											<span>26</span>
-											<span>27</span>
-											<span>28</span>
-											<span>29</span>
-											<span>30</span>
-											<span>31</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div> -->
 				</div>
 				<div class="col-md">
-					<div class="accordion" id="accordionExample">
+					<div class="accordion" id="accordionCalender">
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingOne">
 								<button
@@ -821,7 +742,7 @@
 								id="collapseOne"
 								class="accordion-collapse collapse show"
 								aria-labelledby="headingOne"
-								data-bs-parent="#accordionExample"
+								data-bs-parent="#accordionCalender"
 							>
 								<div class="accordion-body">
 									<strong>This is the first item's accordion body.</strong> It
@@ -854,7 +775,7 @@
 								id="collapseTwo"
 								class="accordion-collapse collapse"
 								aria-labelledby="headingTwo"
-								data-bs-parent="#accordionExample"
+								data-bs-parent="#accordionCalender"
 							>
 								<div class="accordion-body">
 									<strong>This is the second item's accordion body.</strong> It
@@ -887,7 +808,7 @@
 								id="collapseThree"
 								class="accordion-collapse collapse"
 								aria-labelledby="headingThree"
-								data-bs-parent="#accordionExample"
+								data-bs-parent="#accordionCalender"
 							>
 								<div class="accordion-body">
 									<strong>This is the third item's accordion body.</strong> It
@@ -920,7 +841,7 @@
 								id="collapseFour"
 								class="accordion-collapse collapse"
 								aria-labelledby="headingFour"
-								data-bs-parent="#accordionExample"
+								data-bs-parent="#accordionCalender"
 							>
 								<div class="accordion-body">
 									<strong>This is the third item's accordion body.</strong> It
@@ -1009,7 +930,8 @@
 			integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
 			crossorigin="anonymous"
 		></script>
-
+		<!-- events calender Script -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
 		<!-- javascript file -->
 		<script src="assets/js/app.js"></script>
 		<!-- javascript form validation -->
