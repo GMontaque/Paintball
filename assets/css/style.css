@@ -28,45 +28,36 @@ main {
 /* scrollbar */
 
 /* width */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	width: 15px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 5px white;
-	/* border-radius: 10px; */
-	background-color: white;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-	background: black;
-	/* border-radius: 10px; */
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-	background: green;
-}
-
-/* .row,
-.row > * {
-	padding: 0 !important;
 } */
 
-/* .row {
-	display: -ms-flexbox; 
-	display: flex;
-	-ms-flex-wrap: wrap; 
-	flex-wrap: wrap;
-	padding: 0 4px;
+/* Track */
+/* ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px white;
+	border-radius: 10px;
+	background-color: white;
+} */
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+	background: black;
+	border-radius: 10px;
+} */
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+	background: green;
 } */
 
 /* nav/header */
 
 header {
 	background-color: blue;
+}
+
+header .col-md {
+	max-width: fit-content;
 }
 
 .headerTop {
@@ -78,17 +69,18 @@ header {
 .title {
 	margin-right: 7rem;
 	font-weight: 700;
-	font-size: 7rem;
+	font-size: 5rem;
 }
 
 .secondPage {
-	position: absolute;
+	/* position: absolute;
 	top: 24%;
-	right: 20%;
+	right: 20%; */
 	font-size: 2rem;
 	color: black;
 	width: auto;
-	z-index: 1;
+	position: relative;
+	z-index: 2;
 }
 .secondPage:hover {
 	color: yellow;
@@ -104,6 +96,7 @@ header {
 .headerVideo {
 	clip-path: polygon(0% 12%, 100% 24%, 100% 100%, 0% 82%);
 	width: 100%;
+	z-index: 1;
 }
 
 /* spacer creating slashes */
@@ -122,9 +115,9 @@ header {
 	background-color: red;
 }
 
-.spacerBox1Back {
+/* .spacerBox1Back {
 	padding: 0rem;
-}
+} */
 
 .spacerBox2 {
 	background-color: blue;
@@ -169,8 +162,7 @@ header {
 	border: 20px solid black;
 	border-radius: 2rem;
 	height: 50rem;
-	margin: 0rem 3rem;
-
+	/* margin: 0rem 3rem; */
 	background-size: 100% 100%;
 	position: relative;
 }
@@ -221,11 +213,11 @@ header {
 	background: rgb(0, 188, 212);
 	border-radius: 5rem;
 	padding: 0.5rem 0.5rem;
-	width: 10rem;
+	width: 11rem;
 }
 
 .progress {
-	margin: 0.5rem 0rem;
+	/* margin: 0.5rem 0rem; */
 	width: 10rem;
 }
 
@@ -235,7 +227,7 @@ header {
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
-	width: 420px;
+	width: 80%;
 	margin: 0 auto;
 	height: 570px;
 	overflow: hidden;
@@ -243,7 +235,7 @@ header {
 
 .header {
 	height: 50px;
-	width: 420px;
+	/* width: 100%; */
 	background: rgba(66, 66, 66, 1);
 	text-align: center;
 	position: relative;
@@ -251,8 +243,8 @@ header {
 }
 
 .header h1 {
-	margin: 0;
-	padding: 0;
+	/* margin: 0;
+	padding: 0; */
 	font-size: 20px;
 	line-height: 50px;
 	font-weight: 100;
@@ -321,6 +313,10 @@ header {
 
 .week {
 	background: #4a4a4a;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	height: 8rem;
 }
 
 .day {
@@ -535,8 +531,8 @@ header {
 /* accordion */
 .accordion {
 	margin: 0rem auto;
-	width: 90%;
-	padding-right: 10rem;
+	width: 80%;
+	/* padding-right: 10rem; */
 }
 
 .accordion-header {
@@ -547,7 +543,7 @@ header {
 
 .mailInput {
 	width: 90%;
-	padding: 0;
+	/* padding: 0; */
 }
 
 footer .col-md {
@@ -557,7 +553,7 @@ footer .col-md {
 }
 
 footer .col-md:nth-child(odd) {
-	padding-left: 3rem !important;
+	padding-left: 3rem;
 }
 
 .footerHeader {
@@ -579,7 +575,7 @@ footer .col-md:nth-child(odd) {
 	-ms-flex: 25%; /* IE10 */
 	flex: 33%;
 	max-width: 25%;
-	padding: 0 4px;
+	/* padding: 0 4px; */
 }
 
 .column img {

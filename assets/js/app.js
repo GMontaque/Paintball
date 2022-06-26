@@ -149,30 +149,30 @@
 		var number = createElement("div", "day-number", day.format("DD"));
 
 		//Events
-		var events = createElement("div", "day-events");
-		this.drawEvents(day, events);
+		// var events = createElement("div", "day-events");
+		// this.drawEvents(day, events);
 
 		outer.appendChild(name);
 		outer.appendChild(number);
-		outer.appendChild(events);
+		// outer.appendChild(events);
 		this.week.appendChild(outer);
 	};
 
-	Calendar.prototype.drawEvents = function (day, element) {
-		if (day.month() === this.current.month()) {
-			var todaysEvents = this.events.reduce(function (memo, ev) {
-				if (ev.date.isSame(day, "day")) {
-					memo.push(ev);
-				}
-				return memo;
-			}, []);
+	// Calendar.prototype.drawEvents = function (day, element) {
+	// 	if (day.month() === this.current.month()) {
+	// 		var todaysEvents = this.events.reduce(function (memo, ev) {
+	// 			if (ev.date.isSame(day, "day")) {
+	// 				memo.push(ev);
+	// 			}
+	// 			return memo;
+	// 		}, []);
 
-			todaysEvents.forEach(function (ev) {
-				var evSpan = createElement("span", ev.color);
-				element.appendChild(evSpan);
-			});
-		}
-	};
+	// 		todaysEvents.forEach(function (ev) {
+	// 			var evSpan = createElement("span", ev.color);
+	// 			element.appendChild(evSpan);
+	// 		});
+	// 	}
+	// };
 
 	Calendar.prototype.getDayClass = function (day) {
 		classes = ["day"];
@@ -239,75 +239,6 @@
 
 		arrow.style.left = el.offsetLeft - el.parentNode.offsetLeft + 27 + "px";
 	};
-
-	// Calendar.prototype.renderEvents = function (events, ele) {
-	// 	//Remove any events in the current details element
-	// 	var currentWrapper = ele.querySelector(".events");
-	// 	var wrapper = createElement(
-	// 		"div",
-	// 		"events in" + (currentWrapper ? " new" : "")
-	// 	);
-
-	// 	events.forEach(function (ev) {
-	// 		var div = createElement("div", "event");
-	// 		var square = createElement("div", "event-category " + ev.color);
-	// 		var span = createElement("span", "", ev.eventName);
-
-	// 		div.appendChild(square);
-	// 		div.appendChild(span);
-	// 		wrapper.appendChild(div);
-	// 	});
-
-	// 	if (!events.length) {
-	// 		var div = createElement("div", "event empty");
-	// 		var span = createElement("span", "", "No Events");
-
-	// 		div.appendChild(span);
-	// 		wrapper.appendChild(div);
-	// 	}
-
-	// 	if (currentWrapper) {
-	// 		currentWrapper.className = "events out";
-	// 		currentWrapper.addEventListener("webkitAnimationEnd", function () {
-	// 			currentWrapper.parentNode.removeChild(currentWrapper);
-	// 			ele.appendChild(wrapper);
-	// 		});
-	// 		currentWrapper.addEventListener("oanimationend", function () {
-	// 			currentWrapper.parentNode.removeChild(currentWrapper);
-	// 			ele.appendChild(wrapper);
-	// 		});
-	// 		currentWrapper.addEventListener("msAnimationEnd", function () {
-	// 			currentWrapper.parentNode.removeChild(currentWrapper);
-	// 			ele.appendChild(wrapper);
-	// 		});
-	// 		currentWrapper.addEventListener("animationend", function () {
-	// 			currentWrapper.parentNode.removeChild(currentWrapper);
-	// 			ele.appendChild(wrapper);
-	// 		});
-	// 	} else {
-	// 		ele.appendChild(wrapper);
-	// 	}
-	// };
-
-	// Calendar.prototype.drawLegend = function () {
-	// 	var legend = createElement("div", "legend");
-	// 	var calendars = this.events
-	// 		.map(function (e) {
-	// 			return e.calendar + "|" + e.color;
-	// 		})
-	// 		.reduce(function (memo, e) {
-	// 			if (memo.indexOf(e) === -1) {
-	// 				memo.push(e);
-	// 			}
-	// 			return memo;
-	// 		}, [])
-	// 		.forEach(function (e) {
-	// 			var parts = e.split("|");
-	// 			var entry = createElement("span", "entry " + parts[1], parts[0]);
-	// 			legend.appendChild(entry);
-	// 		});
-	// 	this.el.appendChild(legend);
-	// };
 
 	Calendar.prototype.nextMonth = function () {
 		this.current.add("months", 1);
