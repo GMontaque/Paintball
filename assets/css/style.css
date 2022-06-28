@@ -115,9 +115,9 @@ header .col-md {
 	background-color: red;
 }
 
-/* .spacerBox1Back {
-	padding: 0rem;
-} */
+.spacerBox1BackSecond {
+	margin-top: -24rem;
+}
 
 .spacerBox2 {
 	background-color: blue;
@@ -162,7 +162,7 @@ header .col-md {
 	border: 20px solid black;
 	border-radius: 2rem;
 	height: 50rem;
-	/* margin: 0rem 3rem; */
+	margin: 3rem 2rem;
 	background-size: 100% 100%;
 	position: relative;
 }
@@ -227,8 +227,8 @@ header .col-md {
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
-	width: 80%;
-	margin: 0 auto;
+	/* width: 80%; */
+	margin: 0rem 2rem 0rem 10%;
 	height: 570px;
 	overflow: hidden;
 }
@@ -350,6 +350,11 @@ header .col-md {
 .day-number {
 	font-size: 24px;
 	letter-spacing: 1.5px;
+}
+
+.details,
+.details in {
+	display: none;
 }
 
 /* Calender Animation */
@@ -624,6 +629,13 @@ footer .col-md:nth-child(odd) {
 	padding: 0.5rem;
 }
 
+.form-check {
+	background-color: lightgrey;
+	width: fit-content;
+	padding-right: 0.5rem;
+	padding-left: 2rem;
+}
+
 .joinerStyle {
 	color: black;
 	text-shadow: 1px 1px 2px rgba(000, 000, 000, 0.7),
@@ -635,7 +647,7 @@ footer .col-md:nth-child(odd) {
 /* contact form */
 .contactForm {
 	width: 60%;
-	height: 50vh;
+	height: 70vh;
 	margin: 10% auto 1% auto;
 	border: 20px solid lightslategrey;
 	box-shadow: 7px 7px 20px #555;
@@ -694,3 +706,145 @@ footer .col-md:nth-child(odd) {
 	padding: 1rem;
 	width: 15rem;
 }
+
+/* ****************media queries********************* */
+
+/* first page header */
+@media (max-width: 769px) {
+	.logoImg {
+		width: 40vw;
+		height: auto;
+	}
+	.headerTop {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+
+	header .col-md {
+		width: fit-content;
+	}
+	.title,
+	.secondPage {
+		font-size: 4vw;
+	}
+}
+
+@media (max-width: 426px) {
+	.headerTop {
+		justify-content: flex-end;
+	}
+}
+
+/* first page calender */
+@media (max-width: 1025px) {
+	#calendar {
+		margin: 0rem 0rem 0rem 10%;
+	}
+}
+@media (max-width: 769px) {
+	.calendarRow {
+		flex-direction: column;
+	}
+	#calendar {
+		margin: 0rem 2% 0rem 2%;
+	}
+}
+
+@media (max-width: 426px) {
+	.day-name,
+	.day-number {
+		font-size: 4vw;
+	}
+	.day {
+		padding: 10px 0px;
+	}
+}
+
+/* second page contact form */
+
+@media (max-width: 1441px) {
+	.contactForm {
+		width: 80vw;
+	}
+}
+
+@media (max-width: 1025px) {
+	.contactComments {
+		width: 90%;
+	}
+	.contactName,
+	.contactEmail,
+	.contactBtn {
+		margin-left: -1rem;
+	}
+}
+
+@media (max-width: 769px) {
+	.contactForm {
+		width: 90vw;
+	}
+}
+
+@media (max-width: 608px) {
+	.contactForm {
+		width: 99%;
+		height: 70vh;
+		margin: 10% auto;
+		border: 20px solid lightslategrey;
+		box-shadow: 7px 7px 20px #555;
+		display: grid;
+		grid-template-areas:
+			"contactTitle  postImage"
+			"contactName contactEmail"
+			"contactComments  contactComments"
+			"button .";
+	}
+	.contactName,
+	.contactBtn,
+	.contactComments,
+	.contactEmail {
+		margin-left: 0;
+	}
+
+	.contactEmail,
+	.contactName {
+		width: 44vw;
+	}
+	.contactComments {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+	.hr {
+		display: none;
+	}
+}
+
+@media (max-width: 489px) {
+	.contactComments {
+		width: 95%;
+	}
+}
+
+@media (max-width: 426px) {
+	.postCardImg {
+		width: 80%;
+	}
+	.postStamp {
+		margin-top: 5rem;
+	}
+}
+
+@media (max-width: 376px) {
+	.contactEmail {
+		margin-left: -5rem;
+		margin-right: -3rem;
+	}
+}
+
+/* @media (max-width: 321px) {
+	.contactEmail {
+		margin-left: -4rem;
+	}
+} */
